@@ -1,11 +1,3 @@
-# Android builds do not need to link in a separate pthread library.
-LIB_COPTS = []
-
-LIB_LINKOPTS = select({
-    ":android": [],
-    ":windows": [],
-    "//conditions:default": ["-lpthread"],
-})
-
-BIN_LINKOPTS = LIB_LINKOPTS
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:73bb39ea4d9aa0681a455c6d8191dd9b74e121213130ab5259b2ec7dd9c8c5c8
+size 224
